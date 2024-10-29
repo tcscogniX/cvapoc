@@ -169,4 +169,4 @@ def get_automatic_response_from_premap():
         return jsonify(return_dict)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=8080, host="0.0.0.0")
