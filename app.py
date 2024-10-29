@@ -9,7 +9,7 @@ config = configparser.ConfigParser()
 config.read("D:\\Application\\CEM\\Orchestrator\\Code\\config.ini")
 
 date_str = datetime.now().strftime(format="%d_%m_%Y")
-logging.basicConfig(filename=f"./Code/Logs/orchestrator_log_{date_str}.log", filemode="a", format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
+logging.basicConfig(filename=f"./Logs/orchestrator_log_{date_str}.log", filemode="a", format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger("orchestrator")
 
 app = Flask(__name__)
